@@ -2,10 +2,10 @@
 ## Overview
 A full-stack cross-platform mobile app built with **React Native + Expo** that lets users discover and favorite recipes. The app uses **Clerk** for authentication, fetches recipes from a public API, and stores user-specific favorites via a custom **Node.js + Express** backend deployed on **Render**, using **PostgreSQL** with **NenoDB + Drizzle ORM**.
 
-Below are screenshots of the app's SignIn, Register, and Email Verification pages:
+Below are screenshots of the app's **SignIn**, **Register**, and **Email Verification** pages:
 ![screenshot1](screenshot1.png)
 
-Below are screenshots of the Recipe Home, Search, Favorites, and Recipe Detail pages:
+Below are screenshots of the **Recipe Home**, **Search**, **Favorites**, and **Recipe Detail** pages:
 ![screenshot2](screenshot2.png)
 
 ## Objectives
@@ -33,17 +33,17 @@ Finding the right meal to cook can be time-consuming, especially when browsing t
 
 ## Architecture Overview
 * **Backend Architecture**:
-- Exposes RESTful endpoints (`GET`, `POST`, `DELETE`) to manage user favorites.
-- Secure endpoints with Clerk authentication middleware.
-- Uses NenoDB + Drizzle ORM to interact with PostgreSQL.
-- Hosted on **Render** with publicly accessible API endpoints.
+   * Exposes RESTful endpoints (`GET`, `POST`, `DELETE`) to manage user favorites.
+   * Secure endpoints with Clerk authentication middleware.
+   * Uses NenoDB + Drizzle ORM to interact with PostgreSQL.
+   * Hosted on **Render** with publicly accessible API endpoints.
 
-* **BFrontend Architecture**:
-- Built with React Native and Expo, with modular component structure.
-- Handles navigation using **expo-router**.
-- Authenticates users and securely stores session data via Clerk.
-- Fetches recipes from **TheMealDB API** and favorites from backend.
-- Implements debounced search to reduce redundant API calls.
+* **Frontend Architecture**:
+   * Built with React Native and Expo, with modular component structure.
+   * Handles navigation using **expo-router**.
+   * Authenticates users and securely stores session data via Clerk.
+   * Fetches recipes from **TheMealDB API** and favorites from backend.
+   * Implements debounced search to reduce redundant API calls.
 
 
 ## How to Build and Run
